@@ -1,0 +1,245 @@
+@font-face {
+  font-family: Inter;
+  src: url(fonts/Inter_18pt-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+  font-family: Inter;
+}
+.MyNav {
+  height: 60px;
+  padding: 20px 0;
+}
+.myLogo {
+  font-size: 14px;
+}
+.myLogo img {
+  width: 24px;
+  height: 16;
+}
+.MyFormBtn {
+  display: flex;
+  justify-items: center;
+}
+.myRegBtn {
+  width: 165px;
+  height: 40px;
+  background-color: #4caf4f;
+  color: white;
+  border: 0 solid black;
+  border-radius: 5px;
+}
+.myRegBtn img {
+  color: white;
+}
+
+/* carousial */
+
+.carousel {
+  height: 417px;
+  background-color: #f5f7fa;
+  margin: 20px 0px;
+}
+.myCarousial1 {
+  width: 460px;
+  height: 200px;
+}
+.myCarousial2 {
+  width: 275px;
+  height: 285px;
+}
+
+.carousel-card {
+  width: 490px;
+  height: 195px;
+  margin-top: 75px;
+  background-color: transparent;
+  padding: 0px;
+  border: 0 solid grey;
+}
+.carousel-card2 {
+  width: 275px;
+  height: 285px;
+  margin-top: 60px;
+  background-color: transparent;
+  border: 0px solid grey;
+}
+.carousel-card h1 {
+  font-weight: 600;
+  font-size: 44px;
+  color: #4d4d4d;
+  margin: 0px;
+}
+.carousel-card p {
+  font-weight: 400;
+  font-size: 12px;
+  color: #717171;
+  margin: 20px 0;
+}
+.myBtn {
+  width: 90px;
+  height: 36px;
+  background-color: #4caf4f;
+  color: white;
+  border: 1px solid #4caf4f;
+  border-radius: 3px;
+  font-size: 400;
+  font-size: 12px;
+}
+.myBtn:hover {
+  background-color: #4caf4f;
+  border: 1px solid #4caf4f;
+}
+.carousel-card2 img {
+  width: 275px;
+  height: 285px;
+}
+.dot {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+  z-index: 1;
+}
+.dot img {
+  width: 32px;
+  height: 6px;
+}
+/* Our Client */
+.client-text, .manage-head{
+  text-align: center;
+}
+.client-text h4, .manage-head h4, .manage-card h4, .pixelgrade-card h1{
+  font-size: 26px;
+  font-weight: 600;
+  color: #4d4d4d;
+}
+.client-text p, .manage-head p, .manage-card p, .pixelgrade-card p {
+  font-weight: 400;
+  font-size: 12px;
+  color: #717171;
+  margin: 15px 0 40px; 
+}
+/* manage */
+.manage{
+  height: 300px;
+  margin-top: 60px;
+  }
+  .manage-card{
+    width: 208px;
+    height: 182px;
+    text-align: center;
+  }
+  .manage-card img{
+    margin-bottom: 20px;
+  }
+  /* pixelgrade */
+  .pixelgrade{
+    height: 301px;
+    margin: 40px 0px;
+    
+  }
+  
+  .pixelgrade-card{
+    width: 490px;
+  height: 301px;
+  margin-top: 75px;
+  background-color: transparent;
+  padding: 0px;
+  border: 0 solid grey;
+  }
+  .pixelgrade-card2{
+    width: 275px;
+  height: 301px;
+  margin-top: 60px;
+  background-color: transparent;
+  border: 0px solid grey;
+  }
+  /* helping */
+
+  .helping{
+    height: 202px;
+    background-color: #f5f7fa;
+    margin-top: 100px;
+
+  }
+  .helping-card1, .helping-card2{
+    width: 400px;
+    height: 100px;
+    margin-top: 50px;
+  }
+ 
+  .small-cards{
+    width: 180px;
+    height: 75px;
+  }
+  .small-card-text{
+    width: 135px;
+    height: 45px;
+    text-align: left;
+    margin-left: 0px;
+  }
+  .small-card-text p{
+    font-weight: 400;
+  font-size: 12px;
+  color: #717171;
+  }
+  .img{
+    width: 70px;
+    height: 70px;
+  }
+  .small-cards img{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-right: 0px;
+    
+  }
+.small-card-text h4{
+   font-size: 20px;
+  font-weight: 600;
+  color: #4d4d4d;
+}
+/* Pellent */
+.pellent{
+  height: 440px;
+  background-color: #f5f7fa;
+  padding-top: 100px;
+  
+  
+}
+.pellent h1{
+  counter-reset: #263238;
+   font-weight: 600;
+  font-size: 45px;
+  text-align: center;
+ 
+  
+}
+.pellent a{
+  width: 135px;
+  height: 36px;
+  background-color: #4caf4f;
+  color: white;
+  border: 1px solid #4caf4f;
+  border-radius: 3px;
+  font-size: 400;
+  font-size: 12px;
+  text-decoration: none;
+  padding-top: 10px;
+  margin-top: 50px;
+}
+
+.right img{
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+}
+
+.pellent a:hover {
+  background-color: #4caf4f;
+  border: 1px solid #4caf4f;
+}
+
+  
