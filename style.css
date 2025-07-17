@@ -36,9 +36,9 @@
 /* carousial */
 
 .carousel {
-  height: 417px;
+  height: auto;
   background-color: #f5f7fa;
-  margin: 20px 0px;
+  margin: 40px 0px;
 }
 .myCarousial1 {
   width: 460px;
@@ -52,7 +52,7 @@
 .carousel-card {
   width: 490px;
   height: 195px;
-  margin-top: 75px;
+  margin: 55px 0;
   background-color: transparent;
   padding: 0px;
   border: 0 solid grey;
@@ -60,7 +60,7 @@
 .carousel-card2 {
   width: 275px;
   height: 285px;
-  margin-top: 60px;
+  margin: 0px 0;
   background-color: transparent;
   border: 0px solid grey;
 }
@@ -97,7 +97,7 @@
 .dot {
   display: flex;
   justify-content: center;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   z-index: 1;
 }
 .dot img {
@@ -117,25 +117,62 @@
   font-weight: 400;
   font-size: 12px;
   color: #717171;
-  margin: 15px 0 40px; 
+   
 }
-/* manage */
-.manage{
-  height: 300px;
-  margin-top: 60px;
-  }
-  .manage-card{
-    width: 208px;
-    height: 182px;
-    text-align: center;
-  }
-  .manage-card img{
-    margin-bottom: 20px;
-  }
+.client-text-img{
+  margin-top: 30px;
+}
+/* Manage Section */
+.manage {
+  margin: 100px auto;
+  padding: 0 15px;
+}
+
+.manage-head h4 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #4d4d4d;
+  margin: 0;
+}
+
+.manage-head p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #717171;
+  margin-top: 10px;
+}
+
+.manage-card {
+  background-color: transparent;
+  padding: 20px 10px;
+  text-align: center;
+  border: none;
+}
+
+.manage-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.manage-card h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #4d4d4d;
+  margin-bottom: 10px;
+}
+
+.manage-card p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #717171;
+  padding: 0 10px;
+}
+
   /* pixelgrade */
   .pixelgrade{
-    height: 301px;
-    margin: 40px 0px;
+    height: auto;
+    margin: 40px auto;
     
   }
   
@@ -155,57 +192,113 @@
   border: 0px solid grey;
   }
   /* helping */
-
-  .helping{
-    height: 202px;
-    background-color: #f5f7fa;
-    margin-top: 100px;
-
-  }
-  .helping-card1, .helping-card2{
-    width: 400px;
-    height: 100px;
-    margin-top: 50px;
-  }
- 
-  .small-cards{
-    width: 180px;
-    height: 75px;
-  }
-  .small-card-text{
-    width: 135px;
-    height: 45px;
-    text-align: left;
-    margin-left: 0px;
-  }
-  .small-card-text p{
-    font-weight: 400;
-  font-size: 12px;
-  color: #717171;
-  }
-  .img{
-    width: 70px;
-    height: 70px;
-  }
-  .small-cards img{
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    margin-right: 0px;
-    
-  }
-.small-card-text h4{
-   font-size: 20px;
-  font-weight: 600;
-  color: #4d4d4d;
-}
-/* Pellent */
-.pellent{
-  height: 440px;
+/* General Styling */
+.pellent-color {
   background-color: #f5f7fa;
-  padding-top: 100px;
+  padding: 60px 0;
+}
+
+/* Left text content */
+.helping-card1 h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #263238;
+  margin-bottom: 0;
+}
+
+.helping-card1 h2:nth-child(2) {
+  color: #4caf50;
+}
+
+.helping-card1 p {
+  font-size: 14px;
+  color: #717171;
+  margin-top: 10px;
+}
+
+/* Right stats section */
+.helping-card2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+}
+.helping-card2 h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.helping-card2 p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.hepling-card-part1,
+.hepling-card-part2 {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Small stat cards */
+.small-cards {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.small-cards img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.small-card-text h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #4caf50;
+  margin: 0;
+}
+
+.small-card-text p {
+  font-size: 14px;
+  color: #717171;
+  margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .helping {
+    text-align: center;
+  }
+
+  .helping-card2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hepling-card-part1,
+  .hepling-card-part2 {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .small-cards {
+    justify-content: center;
+  }
+}
+
+/* Pellent */
+.pellent-color1{
+  background-color: #f5f7fa;
+  
+}
+.pellent{
+  height: auto;
+  
+  
   
   
 }
@@ -228,7 +321,7 @@
   font-size: 12px;
   text-decoration: none;
   padding-top: 10px;
-  margin-top: 50px;
+  margin: 50px 0;
 }
 
 .right img{
@@ -243,15 +336,17 @@
 }
 
  /*  footer */
-
+.footer-color{
+background-color:#263238
+}
 .footer {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 60px 0px;
-  background-color:#263238;
+  
+  padding: 60px 0px 30px 0px;
+  
 }
 .footer-cards1 {
   width: 300px;
@@ -266,6 +361,9 @@
   
   text-align: left;
 }
+/* .copyright{
+  padding-top: 20px;
+} */
 .footer-cards1 a, .footer-cards1 p {
   margin: 10px 0px;
   font-size: 16px;
@@ -298,7 +396,20 @@
   text-align: left;
   margin: 20px 0px;
 }
-.footer-cards img {
+.media img{
+  margin-top: 30px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #F5F7FA;
+  border-radius: 50%;
+  background-color: transparent;
+  color: white;
+  padding-top: px;
+  padding-left: px;
+  margin-right: 12px;
+}
+/* .footer-cards img {
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -308,16 +419,257 @@
   color: white;
   padding-top: 12px;
   padding-left: 12px;
-  margin-right: 5px;
+  margin-right: 8px;
+} */
+.nexcent-logo{
+  margin: 20px 0px;
 }
 .footer-cards input{
-  
+  width: 220px;
+  height: 40px;
+  background-color: rgba(128, 128, 128, 0.356);
   background-image: url(image/send.png);
+  background-size: 16px;
   
-  background-position: left;
+  background-position-x: 190px;
+  background-position-y: center;
   background-repeat: no-repeat;
   padding-left: 10px;
   border: 0 solid grey;
-  border-radius: 3px;
+  border-radius: 5px;
+  margin-top: 10px;
 }
+@media (max-width: 576px) {
+  .carousel-card h1 {
+    font-size: 28px;
+  }
+  .myRegBtn {
+    width: 100%;
+    font-size: 14px;
+  }
+  .manage {
+    margin: 50px auto;
+  }
+}
+
+/* === MOBILE SCREENS (425px and below) === */
+
+
+@media only screen and (max-width: 425px) {
+
+  /* === Navbar === */
+  
+   .navbar-collapse {
+    margin-top: 5px;
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+    background-color: white; /* optional: improves visibility */
+    padding: 15px 0;
+  }
+
+  .navbar-nav .nav-link {
+    z-index: 1001;
+  }
+  .navbar-toggler {
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+    line-height: 1;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-toggler-icon {
+    width: 1.5em;
+    height: 1.5em;
+  }
+  .myLogo {
+  font-size: 18px;
+}
+.myLogo img {
+  width: 30px;
+  height: 18;
+  margin-right: 5px;
+}
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 16px;
+    padding: 10px 0;
+    color: #263238 !important;
+  }
+
+  .MyFormBtn {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .myRegBtn {
+    width: 80%;
+    max-width: 220px;
+  }
+
+  /* === Carousel Section === */
+  .carousel {
+    padding: 20px 10px;
+  }
+
+  .carousel-card,
+  .carousel-card2 {
+    width: 100% !important;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .carousel-card h1 {
+    font-size: 28px;
+  }
+
+  .carousel-card p {
+    font-size: 14px;
+  }
+
+  .carousel-card2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .dot {
+    margin: 10px auto;
+  }
+
+  /* === Our Client Section === */
+  .client-text-img {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .client-text-img img {
+    width: 40px;
+    height: auto;
+  }
+
+  /* === Manage Section === */
+  .manage {
+    margin: 40px auto;
+    padding: 0 10px;
+  }
+
+  .manage-card {
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  .manage-card img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .manage-card h4 {
+    font-size: 18px;
+  }
+
+  .manage-card p {
+    font-size: 13px;
+  }
+
+  /* === Pixelgrade Section === */
+  .pixelgrade-card,
+  .pixelgrade-card2 {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .pixelgrade-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pixelgrade-card h1 {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .pixelgrade-card p {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  /* === Helping Section === */
+  .helping .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .helping h2 {
+    font-size: 24px;
+  }
+
+  .helping p {
+    font-size: 14px;
+  }
+
+  .helping .icon-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .helping h5 {
+    font-size: 18px;
+  }
+
+  .helping small {
+    font-size: 12px;
+  }
+
+  .helping .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    justify-content: center !important;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  /* === Pellent Section === */
+  .pellent h1 {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .pellent .right {
+    display: flex;
+    justify-content: center;
+  }
+
+  .pellent a {
+    width: 100%;
+    max-width: 180px;
+    font-size: 14px;
+    margin: 20px auto;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .right img {
+    width: 14px;
+    height: 14px;
+    margin-left: 8px;
+  }
+}
+
  
