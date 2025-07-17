@@ -1,0 +1,180 @@
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  color: #4d4d4d;
+  
+}
+
+@font-face {
+  font-family: "Caveat";
+  src: url(font/Caveat-Regular.ttf);
+}
+@font-face {
+  font-family: "FunnelDisplay";
+  src: url(font/FunnelDisplay-Regular.ttf);
+}
+.caveat {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.funnel-display {
+  font-family: "Funnel Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+
+
+.signup-form{
+  width: 550px;
+  height: 600px;
+background-color: #f5f7fa;
+margin-top: 50px;
+padding: 60px 0px 20px;
+box-shadow: 0 0 10px #4d4d4d, 0 0 25px #f5f7fa;
+border: 0 solid #f5f7fa;
+border-radius: 10px;
+  
+}
+
+.feildset {
+ 
+  padding: 80px;
+}
+
+.label {
+  display: inline-block;
+  width: 150px;
+  padding: 5px 25px;
+  margin-top: 5px;
+  padding-left: 70px;
+}
+.legend {
+  padding: 5px 10px;
+}
+.input {
+    display: inline-block;
+    box-sizing: border-box;
+  width: 300px;
+  height: 28px;
+  border-radius: 5px;
+ 
+}
+.input:focus{
+    
+    outline:1px solid #4caf4f;
+}
+.para {
+  padding-left: 80px;
+  display: inline-block;
+  color: #4d4d4d;
+}
+.log {
+    display: inline-block;
+  margin-left: 15px;
+  color:white;
+  text-align: center;
+}
+.log:hover {
+        text-shadow: 1PX 1PX #4d4d4d;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.login {
+  width: 280px;
+  
+  padding: 5px 15px;
+  
+
+  margin-left: 139px;
+  margin-bottom: 20px;
+  margin-top: 160px;
+  cursor: pointer;
+  height: 36px;
+  background-color: #4caf4f;
+  color: white;
+  border: 1px solid #4caf4f;
+  border-radius: 3px;
+  font-size: 400;
+  font-size: 12px;
+  text-decoration: none;
+  
+}
+.sub {
+  padding: 5px 15px;
+  
+  border-radius: 5px;
+  margin: 20px 0px 20px 20px;
+  
+  cursor: pointer;
+}
+
+
+
+
+
+.login:hover,
+.sub ~ a:hover, .sub:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: white;
+  text-decoration: none;
+  transform: scale(1.1);
+  transition: 0.5s;
+
+  box-shadow: 2px 2px 20px #4d4d4d;
+}
+#name ,#email, #password, #number {
+    
+    
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding-left: 30px;
+    border: 1px solid gray;
+}
+#name{
+background-image: url(image/name.png);
+}
+#email{
+    background-image: url(image/email.jpg);
+    background-size: 30px;
+}
+#password{
+    background-image: url(image/password.png);
+}
+#number{
+    background-image: url(image/phone.jpg);
+}
+.sub ~ a, .sub{
+  width: 120px;
+  height: 36px;
+  background-color: #4caf4f;
+  color: white;
+  border: 1px solid #4caf4f;
+  border-radius: 3px;
+  font-size: 400;
+  font-size: 12px;
+  text-decoration: none;
+  padding-top: 10px;
+  
+  margin: 50px 0px 20px 20px;
+}
+.back{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  
+}
+.back-home{
+color: #4caf4f;
+  text-decoration: none;
+  font-weight: bold;
+}
